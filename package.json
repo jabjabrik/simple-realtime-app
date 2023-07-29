@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.0"
+  },
+  "name": "simple-realtime-app",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app",
+    "css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css --watch",
+    "dev": "nodemon app & npm run css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "tailwindcss": "^3.3.3"
+  }
+}
