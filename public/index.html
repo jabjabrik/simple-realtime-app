@@ -10,11 +10,10 @@
 </head>
 
 <body class="bg-gradient-to-br from-cyan-300 to-purple-700 h-screen">
-    <div class="container mx-auto px-4">
-        <!-- <div class="bg-white w-[200px] h-[200px]"></div> -->
-        <div class=" flex-col flex justify-center rounded shadow backdrop-blur-sm bg-black/5 max-w-lg">
-            <!-- <div class="m-auto flex-col flex justify-center  p-3 rounded shadow backdrop-blur-sm bg-black/5"> -->
-            <div class="border-b flex justify-center items-center py-4 mb-10">
+    <div class="container mx-auto pt-24">
+        <div class="mx-auto flex-col flex justify-center rounded backdrop-blur-xl shadow-sm md:max-w-lg max-w-xs bg-black/5">
+            <!-- <div class="mx-auto flex-col flex justify-center rounded shadow backdrop-blur-lg  max-w-lg"> -->
+            <div class="border-b flex justify-center items-center py-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-7 h-7">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
                 </svg>
@@ -23,19 +22,21 @@
                 </h2>
             </div>
             <form action="room.html" method="get">
-                <div class="mb-6 flex flex-col items-start">
-                    <label for="username" class="basis-1/5 block mb-2 text-base font-medium text-gray-900 dark:text-white">Username</label>
-                    <input type="text" name="username" id="username" autocomplete="off" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" placeholder="Username" required />
+                <div class="p-4">
+                    <div class="mb-6 flex flex-col items-start">
+                        <label for="username" class="basis-1/5 block mb-2 text-base font-medium text-gray-900 dark:text-white">Username</label>
+                        <input type="text" name="username" id="username" autocomplete="off" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" placeholder="Username" required />
+                    </div>
+                    <div class="mb-6 flex flex-col items-start">
+                        <label for="select-room" class="basis-1/5 block mb-2 text-base font-medium text-gray-900 dark:text-white">Room</label>
+                        <select id="select-room" name="room" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2">
+                            <option class="text-gray-900 text-sm" value="windows">Windows</option>
+                            <option class="text-gray-900 text-sm" value="mac">Mac</option>
+                            <option class="text-gray-900 text-sm" value="linux">Linux</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 w-full text-center shadow shadow-gray-400 cursor-pointer" value="Join Now" />
                 </div>
-                <div class="mb-6 flex flex-col items-start">
-                    <label for="select-room" class="basis-1/5 block mb-2 text-base font-medium text-gray-900 dark:text-white">Room</label>
-                    <select id="select-room" name="room" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2">
-                        <option class="text-gray-900 text-sm" value="windows">Windows</option>
-                        <option class="text-gray-900 text-sm" value="mac">Mac</option>
-                        <option class="text-gray-900 text-sm" value="linux">Linux</option>
-                    </select>
-                </div>
-                <input type="submit" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 w-full text-center mr-2 mb-2 shadow shadow-gray-400 cursor-pointer" value="Join Now" />
             </form>
         </div>
     </div>

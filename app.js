@@ -23,4 +23,4 @@ const PORT = process.env.PORT || 3000
 // });
 
 // httpServer.listen(PORT);
-app.listen(PORT, () => console.log(`App running on http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`App running on http://localhost:${PORT}`));
